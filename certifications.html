@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Certifications</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+            background-color: #e5ecfb;
+        }
+
+        
+
+        .certifications-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .certification {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            max-width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+
+            background-color: #0becb7;
+        }
+
+        .certification iframe {
+            width: 100%;
+            height: 200px;
+            border: none;
+            pointer-events: none;
+        }
+
+        .certification:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .certification:hover iframe {
+            transform: translateY(-50%);
+        }
+
+        .certification h2 {
+            font-size: 1.2em;
+            color: #333;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+        <h1>My Certifications</h1>
+
+    
+    <div class="certifications-container">
+        <!-- Certification 1 -->
+        <div class="certification" onclick="openCertificate('https://drive.google.com/file/d/11DLRL3M-vB21oC97HArs6JhKaKAtiWSi/view?usp=sharing')">
+            <h2>Theory of Computation</h2>
+            <iframe src="https://drive.google.com/file/d/11DLRL3M-vB21oC97HArs6JhKaKAtiWSi/preview"></iframe>
+        </div>
+
+        <!-- Certification 2 -->
+        <div class="certification" onclick="openCertificate('https://drive.google.com/file/d/11NiQo0e8bG69AfEpWXHjQr2o-XI68z1s/view?usp=drive_link')">
+            <h2>DataMining from Saylor</h2>
+            <iframe src="https://drive.google.com/file/d/11NiQo0e8bG69AfEpWXHjQr2o-XI68z1s/preview"></iframe>
+        </div>
+
+        <!-- Certification 3 -->
+        <div class="certification" onclick="openCertificate('https://drive.google.com/file/d/11_QdYJmpeUz3mzPX5OL6FXgGvAhA-B5y/view?usp=drive_link')">
+            <h2>AWS</h2>
+            <iframe src="https://drive.google.com/file/d/11_QdYJmpeUz3mzPX5OL6FXgGvAhA-B5y/preview"></iframe>
+        </div>
+
+        <!-- Certification 4 -->
+        <div class="certification" onclick="openCertificate('https://drive.google.com/file/d/11CuGMoGy6yfZWTk2Fps2V7gMvAiNQ8Xs/view?usp=drive_link')">
+            <h2>Introduction to Networks</h2>
+            <iframe src="https://drive.google.com/file/d/11CuGMoGy6yfZWTk2Fps2V7gMvAiNQ8Xs/preview"></iframe>
+        </div>
+
+        <!-- Certification 5 -->
+        <div class="certification" onclick="openCertificate('https://drive.google.com/file/d/11qO4UbUjJy4TMjnKzHXwUIRwemORcAKx/view?usp=drive_link')">
+            <h2>Operating Systems</h2>
+            <iframe src="https://drive.google.com/file/d/11qO4UbUjJy4TMjnKzHXwUIRwemORcAKx/preview"></iframe>
+        </div>
+
+        <!-- Certification 6 -->
+        <div class="certification" onclick="openCertificate('https://drive.google.com/file/d/11utCLhkIXvibRI-tHlAwdMSOvaoNQU6G/view?usp=drive_link')">
+            <h2>MongoDB</h2>
+            <iframe src="https://drive.google.com/file/d/11utCLhkIXvibRI-tHlAwdMSOvaoNQU6G/preview"></iframe>
+        </div>
+
+        <!-- Certification 7 -->
+        <div class="certification" onclick="openCertificate('https://drive.google.com/file/d/12ZO1hqWVV-M-zmfhutvfz1bgpP4wniso/view?usp=drive_link')">
+            <h2>Data Structures</h2>
+            <iframe src="https://drive.google.com/file/d/12ZO1hqWVV-M-zmfhutvfz1bgpP4wniso/preview"></iframe>
+        </div>
+        <div class="certification" onclick="openCertificate('https://drive.google.com/file/d/10hFs0NRbZAyhhT6VQLbfzLxjTQIXceHH/view?usp=drive_link')">
+            <h2>Hackathon</h2>
+            <iframe src="https://drive.google.com/file/d/10hFs0NRbZAyhhT6VQLbfzLxjTQIXceHH/preview"></iframe>
+        </div>
+        <div class="certification" onclick="openCertificate('https://drive.google.com/file/d/13H0LJo0J47pe3UeMKEoE2fahMjMUpzyT/view?usp=drive_link')">
+            <h2>Problem Solving</h2>
+            <iframe src="https://drive.google.com/file/d/13H0LJo0J47pe3UeMKEoE2fahMjMUpzyT/preview"></iframe>
+        </div>
+        
+    </div>
+
+    <script>
+        function openCertificate(link) {
+            window.open(link, '_blank');
+        }
+    </script>
+
+</body>
+</html>
