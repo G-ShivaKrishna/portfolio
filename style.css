@@ -221,16 +221,6 @@ header .navbar ul li a:hover {
   flex: 1 1 40rem;
   z-index: 1;
 }
-.home .image img {
-  width: 70%;
-  margin-left: 6rem;
-  border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-}
-.home .image img:hover {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-}
 .home .content h2 {
   font-size: 5rem;
   font-weight: 800;
@@ -371,16 +361,11 @@ header .navbar ul li a:hover {
 }
 .about .row .image img {
   margin: 4rem;
-  width: 30rem;
-  height: auto;
-  border-radius: 5%;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
-  mix-blend-mode: luminosity;
+  width: 400px;
+  height: 400px;
   transition: 0.3s;
+
   cursor: pointer;
-}
-.about .row .image img:hover {
-  mix-blend-mode: normal;
 }
 .about .row .content {
   flex: 1 1 45rem;
