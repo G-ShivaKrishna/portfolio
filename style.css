@@ -30,7 +30,11 @@ body {
   top: 200px;
 
 }
-
+@media (max-width: 768px) {
+  .myimg {
+    display: none; /* hide on devices smaller than 768px (mobile, tablet) */
+  }
+}
 *::selection {
   background: #2b3dda;
   color: #fff;
