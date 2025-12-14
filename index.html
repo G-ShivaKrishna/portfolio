@@ -56,7 +56,20 @@
       </ul>
     </div>
   </div>
-<img class="myimg" src="myimg.png" alt="">
+  <!-- Lottie animation (replaced previous SVG) -->
+<div class="hero-animation" aria-hidden="true">
+  <lottie-player
+    src="seo-isometric.json"
+    background="transparent"
+    speed="1"
+    loop
+    autoplay
+    class="lottie-player"
+    style="width:100%;height:100%;display:block;"
+    aria-hidden="true">
+  </lottie-player>
+</div>
+
 </section>
 <!-- hero section ends -->
 
@@ -486,6 +499,8 @@
     ></script>
 
 <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
+<!-- Lottie player webcomponent (keeps the animation embedded) -->
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <script>
   // Carousel + mobile nav JS (replaces the previous inline script)
   // Mobile nav toggle
